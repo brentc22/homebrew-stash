@@ -1,7 +1,6 @@
 cask "stash" do
   version "0.1.0"
-  # Replaced by scripts/release.sh on every release.
-  sha256 :no_check
+  sha256 "b8acdcd35002ce39be5ec45aeb47385a8a318a8a9eb555fb6c17fb577a5048d5"
 
   url "https://github.com/brentc22/stash/releases/download/v#{version}/Stash-#{version}.zip"
   name "Stash"
