@@ -3,13 +3,11 @@ cask "stash" do
   # Replaced by scripts/release.sh on every release.
   sha256 :no_check
 
-  url "https://github.com/brentc22/stash/releases/download/v#{version}/Stash-#{version}.zip",
-      verified: "github.com/brentc22/stash/"
+  url "https://github.com/brentc22/stash/releases/download/v#{version}/Stash-#{version}.zip"
   name "Stash"
   desc "Hides menu bar icons behind a chevron until you need them"
   homepage "https://github.com/brentc22/stash"
 
-  # Homebrew only knows up to macOS 27; widen this once a newer symbol exists.
   depends_on macos: :golden_gate
 
   app "Stash.app"
