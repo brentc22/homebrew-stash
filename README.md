@@ -2,6 +2,10 @@
 
 Homebrew tap for [Stash](https://github.com/brentc22/stash) — a menu bar hider for macOS 27.
 
+> **Not installable yet.** Stash has no published release, so the command below returns a 404.
+> This tap is ready for the first release; watch
+> [brentc22/stash](https://github.com/brentc22/stash) for it.
+
 ```sh
 brew install --cask --no-quarantine brentc22/stash/stash
 ```
