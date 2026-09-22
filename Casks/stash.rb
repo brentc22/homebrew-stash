@@ -5,7 +5,7 @@ cask "stash" do
 
   url "https://github.com/brentc22/stash/releases/download/v#{version}/Stash-#{version}.zip"
   name "Stash"
-  desc "Hides menu bar icons behind a chevron until you need them"
+  desc "Hides menu bar icons behind a single arrow until you need them"
   homepage "https://github.com/brentc22/stash"
 
   depends_on macos: :golden_gate
