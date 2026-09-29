@@ -1,6 +1,6 @@
 cask "stash" do
-  version "0.1.0"
-  sha256 "b8acdcd35002ce39be5ec45aeb47385a8a318a8a9eb555fb6c17fb577a5048d5"
+  version "0.2.0"
+  sha256 "0642889027048012060878e77b63be5f49f1c4f69d588f899df94a36efd6cb4d"
 
   url "https://github.com/brentc22/stash/releases/download/v#{version}/Stash-#{version}.zip"
   name "Stash"
