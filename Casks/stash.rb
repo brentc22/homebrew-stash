@@ -14,12 +14,8 @@ cask "stash" do
   zap trash: "~/Library/Preferences/com.brentc22.Stash.plist"
 
   caveats <<~EOS
-    Stash is not notarised by Apple, so macOS will refuse to open it on first launch.
-
-    Install it with:
-      brew install --cask --no-quarantine brentc22/stash/stash
-
-    If you already installed it without that flag, clear the quarantine flag once:
+    Stash is not notarised by Apple, so macOS will refuse to open it until the
+    quarantine flag is cleared. After installing or upgrading, run once:
       xattr -dr com.apple.quarantine /Applications/Stash.app
 
     Stash relies on a private framework to control the menu bar. A macOS update can
