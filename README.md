@@ -2,20 +2,15 @@
 
 Homebrew tap for [Stash](https://github.com/brentc22/stash) — a menu bar hider for macOS 27.
 
-> **Not installable yet.** Stash has no published release, so the command below returns a 404.
-> This tap is ready for the first release; watch
-> [brentc22/stash](https://github.com/brentc22/stash) for it.
-
 ```sh
-brew install --cask --no-quarantine brentc22/stash/stash
-```
-
-`--no-quarantine` is required: Stash is not notarised by Apple, so without it macOS refuses to
-open the app on first launch. If you left it out, you can clear the flag afterwards:
-
-```sh
+brew install --cask brentc22/stash/stash
 xattr -dr com.apple.quarantine /Applications/Stash.app
 ```
+
+The second line is required: Stash is ad-hoc signed and not notarised by Apple, so macOS refuses
+to open it on first launch while the quarantine flag is set. Run it again after every
+`brew upgrade --cask stash`. (Older instructions used `--no-quarantine`; current Homebrew has
+removed that option.)
 
 ## Why a tap and not homebrew/cask
 
